@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       })
     }
     can(action) {
-      let match = this.role.permissions.find(function(permission){
+      let match = this.role.permission.find(function(permission){
         return permission.name === action
       });
 
